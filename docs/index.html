@@ -20,83 +20,103 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css" />
+
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
-    <div class="">
+    <div class="scroll-container">
         <nav class="navbar">
             <div class="nav-section brand">
                 <h1 class="display-4">Lorem</h1>
             </div>
             <div class="nav-section navs">
                 <ul class="nav">
-                    <li class="nav-item">Home</li>
-                    <li class="nav-item">About</li>
-                    <li class="nav-item">Appointments</li>
-                    <li class="nav-item">Contact</li>
-                    <li class="nav-item">Staff</li>
-                    <li class="nav-item">News</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#appointments">Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#staff">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
                 </ul>
             </div>
             <div class="nav-section contact-links">
-                <!-- Phone -->
-                <div class="phone-link">Contact</div>
-                <!-- Address -->
-                <div class="address-link">Address</div>
+                <ul class="nav">
+                    <li class="nav-item clickable"><img src="./svg/phone white.svg" alt=""> +91 12345 65789</li>
+                    <li class="nav-item clickable"><img src="./svg/placeholder white.svg" alt=""> Address</li>
+                </ul>
             </div>
         </nav>
-        <section class="head full-height">
+        <section class="head full-height" id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <div class="head-left">
 
                             <div class="sub-text">
-                                <p class="small-text">Here for care</p>
+                                <p class="text-muted-light">Here for care</p>
                             </div>
                             <div class="lead-text">
                                 <h1 class="display-3">Providing Best Healthcare</h1>
                             </div>
                             <div class="about-links">
-                                <a href="#">
-                                    <p class="text-uppercase">about us</p>
-                                </a>
+                                <a href="#about" class="text-uppercase text-decoration-none rounded bg-grey">about us</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <div class="card head-card">
                             <div class="sub-text">
-                                <p class="small-text">Here for you</p>
+                                <p class="text-muted">Here for you</p>
                             </div>
                             <div class="lead-text">
                                 <h1 class="display-3 thin">Find us</h1>
                             </div>
                             <div class="contact-methods">
                                 <div class="contact-method">
-                                    <div class="contact-icon">🏳</div>
+                                    <div class="contact-icon"><img src="./svg/location-pin.svg" alt=""
+                                            class="icon-md" /></div>
                                     <div class="contact-link">
                                         <button type="button" class="dropdown-toggle" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
-                                            <span class="h4">#Address-trimmed</span>
+                                            <span class="h3 ">Address</span>
                                         </button>
                                         <div class="dropdown-menu">
-                                            <p class="dropdown-item">Address1</p>
-                                            <p class="dropdown-item">Address2</p>
+                                            <div class="dropdown-item">
+                                                <p class=""> Address line 1</p>
+                                                <p class="">Address line 2</p>
+                                            </div>
                                             <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
+                                            <a class="dropdown-item" href="#">Maps link</a>
                                         </div>
                                     </div>
                                 </div>
                                 <hr>
                                 <div class="contact-method">
-                                    <div class="contact-icon">❤</div>
+                                    <div class="contact-icon"><img src="./svg/family.svg" alt="" class="icon-md"></div>
                                     <div class="contact-link">
                                         <button type="button" class="dropdown-toggle" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
-                                            <span class="h4">#Services </span>
+                                            <span class="h3">Services </span>
                                         </button>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">Action</a>
@@ -108,7 +128,7 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="rounded-button">
+                                <div class="rounded-button text-center">
                                     <button class="bg-grey rounded">Make Appointment</button>
                                 </div>
                             </div>
@@ -117,19 +137,19 @@
                 </div>
             </div>
         </section>
-        <section class="about full-height">
+        <section class="about full-height" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <div class="grid-container">
                             <div class="grid-item">
                                 <div class="card product-card">
-                                    <div class="card-head">❤</div>
+                                    <div class="card-head"><img src="./svg/doctor.svg" alt="" class="icon-lg" /></div>
                                     <div class="card-body">
                                         <h4 class="card-title">
-                                            product#
+                                            Advanced Care
                                         </h4>
-                                        <p class="card-text text-center text-muted">
+                                        <p class="text-muted">
                                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. At dicta, numquam
                                         </p>
                                     </div>
@@ -137,12 +157,12 @@
                             </div>
                             <div class="grid-item">
                                 <div class="card product-card">
-                                    <div class="card-head">❤</div>
+                                    <div class="card-head"><img src="./svg/syringe.svg" alt="" class="icon-lg"></div>
                                     <div class="card-body">
                                         <h4 class="card-title">
-                                            product#
+                                            Special care
                                         </h4>
-                                        <p class="card-text text-center text-muted">
+                                        <p class="text-muted">
                                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. At dicta, numquam
                                         </p>
                                     </div>
@@ -150,12 +170,13 @@
                             </div>
                             <div class="grid-item">
                                 <div class="card product-card">
-                                    <div class="card-head">❤</div>
+                                    <div class="card-head"><img src="./svg/stethoscope.svg" alt="" class="icon-lg">
+                                    </div>
                                     <div class="card-body">
                                         <h4 class="card-title">
-                                            product#
+                                            Daily Care
                                         </h4>
-                                        <p class="card-text text-center text-muted">
+                                        <p class="text-muted">
                                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. At dicta, numquam
                                         </p>
                                     </div>
@@ -163,12 +184,12 @@
                             </div>
                             <div class="grid-item">
                                 <div class="card product-card">
-                                    <div class="card-head">❤</div>
+                                    <div class="card-head"><img src="./svg/chemical.svg" alt="" class="icon-lg"></div>
                                     <div class="card-body">
                                         <h4 class="card-title">
-                                            product#
+                                            Neural Care
                                         </h4>
-                                        <p class="card-text text-center text-muted">
+                                        <p class="text-muted">
                                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. At dicta, numquam
                                         </p>
                                     </div>
@@ -177,7 +198,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <div class="card no-border">
+                        <div class="product-card card no-border">
                             <div class="card-body">
                                 <p class="small-text">About Us</p>
                                 <h1 class="card-title display-4">A short story about our hospital</h1>
@@ -189,19 +210,19 @@
 
                                 <ul class="about-list">
                                     <li class="about-item">
-                                        <div class="tick">📋</div>
+                                        <div class="tick"><img src="./svg/tick.svg" alt="" class="icon-xs"></div>
                                         <div class="about-text">
                                             Lorem ipsum dolor sit amet consectetur
                                         </div>
                                     </li>
                                     <li class="about-item">
-                                        <div class="tick">📋</div>
+                                        <div class="tick"><img src="./svg/tick.svg" alt="" class="icon-xs"></div>
                                         <div class="about-text">
                                             Placeat nobis laudantium repellat eius ex optio illum
                                         </div>
                                     </li>
                                     <li class="about-item">
-                                        <div class="tick">📋</div>
+                                        <div class="tick"><img src="./svg/tick.svg" alt="" class="icon-xs"></div>
                                         <div class="about-text">
                                             optio illum ratione minima consequatur fugiat
                                         </div>
@@ -209,7 +230,7 @@
                                 </ul>
 
                                 <div class="more-about">
-                                    <a href="#">Learn More</a>
+                                    <a href="#" class="clickable text-decoration-none rounded">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +238,7 @@
                 </div>
             </div>
         </section>
-        <section class="mission full-height">
+        <section class="mission full-height" id="mission">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
@@ -230,9 +251,9 @@
                                     atque, numquam beatae, enim sapiente iusto ratione
                                 </p>
                                 <hr>
-                                <blockquote class="blockquote">
-                                    <div class="quote-icon">
-                                        <i class="fas fa-band-aid display-4"></i>
+                                <div class="blockquote">
+                                    <div class="quote-icon ml-n3 mr-1 mb-1 mt-3 float-left">
+                                        <img src="./svg/bandage.svg" alt="" class="icon-lg">
                                     </div>
                                     <div class="quote-text">
                                         <p class="mb-1 mt-1">
@@ -242,12 +263,12 @@
                                             perspiciatis laudantium
                                         </p>
                                     </div>
-                                </blockquote>
+                                </div>
 
                                 <hr>
-                                <blockquote class="blockquote">
-                                    <div class="quote-icon">
-                                        <i class="fas fa-heartbeat display-4"></i>
+                                <div class="blockquote">
+                                    <div class="quote-icon ml-n3 mr-1 mb-1 mt-3 float-left">
+                                        <img src="./svg/blood.svg" alt="" class="icon-lg">
                                     </div>
                                     <div class="quote-text">
                                         <p class="mb-1 mt-1">
@@ -257,45 +278,51 @@
                                             perspiciatis laudantium
                                         </p>
                                     </div>
-                                </blockquote>
+                                </div>
 
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12">
-                        <div class="card no-border">
+                        <div class="card no-border corner-overlay-container">
                             <img class="responsive shadowed" src="./images/doctor.jpg" alt="doctor">
+                            <div class="corner-overlay">
+                                <img src="./svg/rod-of-asclepius white.svg" alt="" class="icon-md">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="appointment full-height">
+        <section class="appointment full-height" id="appointments">
             <div class="overhead">
                 <div class="overhead-list">
                     <div class="overhead-item">
-                        <div class="overhead-image"><img src="./images/heart-removebg.png" alt="image" class="responsive">
+                        <div class="overhead-image"><img src="./svg/doctor bag.svg" alt="image" class="icon-xl"
+                                class="responsive">
                         </div>
                         <div class="overhead-count">
                             <h1 class="display-4">500+</h1>
                         </div>
-                        <div class="overhead-text small-text">Text</div>
+                        <div class="overhead-text small-text">Doctors</div>
                     </div>
                     <div class="overhead-item">
-                        <div class="overhead-image"><img src="./images/heart-removebg.png" alt="image" class="responsive">
+                        <div class="overhead-image"><img src="./svg/heartbeat.svg" alt="image" class="icon-xl"
+                                class="responsive">
                         </div>
                         <div class="overhead-count">
-                            <h1 class="display-4">500+</h1>
+                            <h1 class="display-4">1000+</h1>
                         </div>
-                        <div class="overhead-text small-text">Text</div>
+                        <div class="overhead-text small-text">Treatments</div>
                     </div>
                     <div class="overhead-item">
-                        <div class="overhead-image"><img src="./images/heart-removebg.png" alt="image" class="responsive">
+                        <div class="overhead-image"><img src="./svg/award.svg" alt="image" class="icon-xl"
+                                class="responsive">
                         </div>
                         <div class="overhead-count">
-                            <h1 class="display-4">500+</h1>
+                            <h1 class="display-4">200+</h1>
                         </div>
-                        <div class="overhead-text small-text">Text</div>
+                        <div class="overhead-text small-text">Awards</div>
                     </div>
                 </div>
             </div>
@@ -306,61 +333,71 @@
                             <div class="card overlay-card ">
                                 <div class="card-body">
                                     <p class="small-text">Free Consultation</p>
-                                    <h1 class="display-3 card-title">Get Your Appointment Now</h1>
+                                    <h1 class="display-4 card-title">Get Your Appointment Now</h1>
                                     <form>
                                         <div class="row">
                                             <div class="col-lg-6 col-sm-12">
                                                 <label class="text-muted text-uppercase" for="name">your name</label>
-                                                <input type="text" id="name" class="text-input" placeholder="Enter Your Name">
+                                                <input type="text" id="name" class="text-input"
+                                                    placeholder="Enter Your Name">
                                                 <hr>
                                             </div>
                                             <div class="col-lg-6 col-sm-12">
                                                 <label class="text-muted text-uppercase" for="email">your email</label>
-                                                <input type="text" id="email" class="text-input" placeholder="Enter Your Email Address">
+                                                <input type="text" id="email" class="text-input"
+                                                    placeholder="Enter Your Email Address">
                                                 <hr>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-6 col-sm-12">
-                                                <label class="text-muted text-uppercase" for="service-type">services</label>
-                                                <input type="text" id="service-type" class="text-input" placeholder="List services">
+                                                <label class="text-muted text-uppercase"
+                                                    for="service-type">services</label>
+                                                <input type="text" id="service-type" class="text-input"
+                                                    placeholder="List services">
                                                 <hr>
                                             </div>
                                             <div class="col-lg-6 col-sm-12">
                                                 <label class="text-muted text-uppercase" for="phone">your phone</label>
-                                                <input type="text" id="phone" class="text-input" placeholder="Enter Your Phone Number">
+                                                <input type="text" id="phone" class="text-input"
+                                                    placeholder="Enter Your Phone Number">
                                                 <hr>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col">
                                                 <div class="rounded-button">
-                                                    <button class="rounded bg-green">
+                                                    <button class="rounded bg-purple">
                                                         Make appointment
                                                     </button>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                             <div class="side-img">
-                                <img src="./images/overlay.jpg" alt="">
+                                <img src="./images/dr-mike-1.jpg" alt="" class="side-img-bg">
+                                <div class="side-img-over">
+                                    <img src="./svg/rod-of-asclepius white.svg" alt="" class="img-over icon-lg">
+                                    <h1 class="h1 text-center">Hospital</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="services full-height">
+        <section class="services full-height" id="services">
             <div class="container">
                 <div class="service-head">
                     <div class="image">
                         <p class="display-1 text-center"><i class="fas fa-stethoscope"></i></p>
                     </div>
                     <div class="title">
-                        <h1 class="display-3 text-capitalize text-center w-5">What we  do for you?</h1>
+                        <p class="text-muted text-center w-5">Services</p>
+                        <h1 class="display-3 text-capitalize text-center w-5">What we do for you?</h1>
                         <div class="underlines">
                             <div class="underline underline-side"></div>
                             <div class="underline underline-center"></div>
@@ -373,53 +410,73 @@
                         <div class="grid-container service-grid-container">
                             <div class="grid-item service-grid-item">
                                 <div class="card half-pad">
-                                    <div class="service-image"><img src="./images/all_icons_attach_molecule.png" alt="image"></div>
+                                    <div class="service-image"><img src="./images/all_icons_attach_molecule.png"
+                                            alt="image"></div>
                                     <div class="small-text text-uppercase">for children</div>
                                     <h1 class="h1 text-capitalize">Medical care</h1>
                                     <div class="underline-center underline"></div>
-                                    <div class="text-muted mt-2 mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quis iusto unde velit quidem suscipit delectus, illum enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum velit.</div>
+                                    <div class="text-muted mt-2 mb-2">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Commodi quis iusto unde velit quidem suscipit delectus, illum
+                                        enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum
+                                        velit.</div>
 
                                     <div class="mt-4">
-                                        <a href="#" class="text-muted text-capitalize text-decoration-none"><i class="fas fa-arrow-right mr-2 "></i> read more</a>
+                                        <a href="#" class="text-muted text-capitalize text-decoration-none"><i
+                                                class="fas fa-arrow-right mr-2 "></i> read more</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="grid-item service-grid-item">
                                 <div class="card half-pad">
-                                    <div class="service-image"><img src="./images/all_icons_attach_molecule.png" alt="image"></div>
+                                    <div class="service-image"><img src="./images/all_icons_attach_molecule.png"
+                                            alt="image"></div>
                                     <div class="small-text text-uppercase">for children</div>
                                     <h1 class="h1 text-capitalize">Medical care</h1>
                                     <div class="underline-center underline"></div>
-                                    <div class="text-muted mt-2 mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quis iusto unde velit quidem suscipit delectus, illum enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum velit.</div>
+                                    <div class="text-muted mt-2 mb-2">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Commodi quis iusto unde velit quidem suscipit delectus, illum
+                                        enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum
+                                        velit.</div>
 
                                     <div class="mt-4">
-                                        <a href="#" class="text-muted text-capitalize text-decoration-none"><i class="fas fa-arrow-right mr-2 "></i> read more</a>
+                                        <a href="#" class="text-muted text-capitalize text-decoration-none"><i
+                                                class="fas fa-arrow-right mr-2 "></i> read more</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="grid-item service-grid-item">
                                 <div class="card half-pad">
-                                    <div class="service-image"><img src="./images/all_icons_attach_molecule.png" alt="image"></div>
+                                    <div class="service-image"><img src="./images/all_icons_attach_molecule.png"
+                                            alt="image"></div>
                                     <div class="small-text text-uppercase">for children</div>
                                     <h1 class="h1 text-capitalize">Medical care</h1>
                                     <div class="underline-center underline"></div>
-                                    <div class="text-muted mt-2 mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quis iusto unde velit quidem suscipit delectus, illum enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum velit.</div>
+                                    <div class="text-muted mt-2 mb-2">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Commodi quis iusto unde velit quidem suscipit delectus, illum
+                                        enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum
+                                        velit.</div>
 
                                     <div class="mt-4">
-                                        <a href="#" class="text-muted text-capitalize text-decoration-none"><i class="fas fa-arrow-right mr-2 "></i> read more</a>
+                                        <a href="#" class="text-muted text-capitalize text-decoration-none"><i
+                                                class="fas fa-arrow-right mr-2 "></i> read more</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="grid-item service-grid-item">
                                 <div class="card half-pad">
-                                    <div class="service-image"><img src="./images/all_icons_attach_molecule.png" alt="image"></div>
+                                    <div class="service-image"><img src="./images/all_icons_attach_molecule.png"
+                                            alt="image"></div>
                                     <div class="small-text text-uppercase">for children</div>
                                     <h1 class="h1 text-capitalize">Medical care</h1>
                                     <div class="underline-center underline"></div>
-                                    <div class="text-muted mt-2 mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quis iusto unde velit quidem suscipit delectus, illum enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum velit.</div>
+                                    <div class="text-muted mt-2 mb-2">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Commodi quis iusto unde velit quidem suscipit delectus, illum
+                                        enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum
+                                        velit.</div>
 
                                     <div class="mt-4">
-                                        <a href="#" class="text-muted text-capitalize text-decoration-none"><i class="fas fa-arrow-right mr-2 "></i> read more</a>
+                                        <a href="#" class="text-muted text-capitalize text-decoration-none"><i
+                                                class="fas fa-arrow-right mr-2 "></i> read more</a>
                                     </div>
                                 </div>
                             </div>
@@ -428,12 +485,447 @@
                 </div>
             </div>
         </section>
-        <section class="testimonials full-height"></section>
-        <section class="contact full-height"></section>
-        <section class="staff full-height"></section>
-        <section class="news full-height"></section>
-        <footer class="footer"></footer>
+        <section class="testimonials full-height" id="testimonials">
+            <div class="container">
+                <div class="service-head">
+                    <div class="image">
+                        <p class="display-1 text-center"><i class="fas fa-stethoscope"></i></p>
+                    </div>
+                    <div class="title">
+                        <p class="text-muted text-center w-5">Testimonials</p>
+                        <h1 class="display-3 text-capitalize text-center w-2">What our clients say about us</h1>
+                        <div class="underlines">
+                            <div class="underline underline-side"></div>
+                            <div class="underline underline-center"></div>
+                            <div class="underline underline-side"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 user-review-left">
+                            <div class="row justify-content-between">
+                                <div class="col-2">
+                                    <div class="quote">
+                                        <img src="./svg/quote-left.svg" alt="" class="icon-md img-over">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="rating">
+                                        <img src="./svg/star.svg" alt="" class="icon-xs">
+                                        <img src="./svg/star.svg" alt="" class="icon-xs">
+                                        <img src="./svg/star.svg" alt="" class="icon-xs">
+                                        <img src="./svg/star.svg" alt="" class="icon-xs">
+                                        <img src="./svg/star.svg" alt="" class="icon-xs">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h4 class="h4 review">
+                                        <strong>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam odio
+                                            quaerat, dolore
+                                        </strong>
+                                    </h4>
+                                    <p class="text-muted thin review">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi placeat
+                                        accusamus quam et in labore quos quaerat nulla tempore commodi?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="user">
+                                        <div class="user-picture float-left w-25">
+                                            <img src="./images/avatar-2155431_960_7201.png" alt="" class="">
+                                        </div>
+                                        <div class="user-info w-50">
+
+                                            <h5 class="h5 mt-3">
+                                                <strong>
+                                                    Malcolm Rodrigues
+                                                </strong>
+                                            </h5>
+                                            <p class="text-muted thin">Founder at <span
+                                                    class="small-text">Company</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="col-lg-6 col-sm-12 user-review-right">
+                            <div class="row justify-content-between">
+                                <div class="col-2">
+                                    <div class="quote">
+                                        <img src="./svg/quote-left.svg" alt="" class="icon-md img-over">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="rating">
+                                        <img src="./svg/star.svg" alt="" class="icon-xs">
+                                        <img src="./svg/star.svg" alt="" class="icon-xs">
+                                        <img src="./svg/star.svg" alt="" class="icon-xs">
+                                        <img src="./svg/star.svg" alt="" class="icon-xs">
+                                        <img src="./svg/star.svg" alt="" class="icon-xs">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h4 class="h4 review">
+                                        <strong>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam odio
+                                            quaerat, dolore
+                                        </strong>
+                                    </h4>
+                                    <p class="text-muted thin review">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi placeat
+                                        accusamus quam et in labore quos quaerat nulla tempore commodi?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="user">
+                                        <div class="user-picture float-left w-25">
+                                            <img src="./images/avatar-2155431_960_7201.png" alt="" class="">
+                                        </div>
+                                        <div class="user-info w-50">
+
+                                            <h5 class="h5 mt-3">
+                                                <strong>
+                                                    Malcolm Rodrigues
+                                                </strong>
+                                            </h5>
+                                            <p class="text-muted thin">Founder at <span
+                                                    class="small-text">Company</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact full-height" id="contact">
+            <div class="container">
+                <div class="service-head">
+                    <div class="row">
+                        <div class="col-lg-6 d-none d-lg-block"></div>
+                        <div class="col-lg-6 col-md-12 d-block">
+                            <div class="card">
+                                <div class="small-text">Subscribe to get updates</div>
+                                <h1 class="card-title display-4 text-capitalize">Find a hospital near you.</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    nostrum velit ea alias animi harum optio possimus, laudantium ullam exercitationem
+                                </p>
+                                <form>
+                                    <input class="form-input" type="email" name="email" id="emailform"
+                                        placeholder="Enter your email address">
+                                    <button class="rounded bg-purple form-btn">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="staff full-height" id="staff">
+            <div class="container">
+                <div class="service-head">
+                    <div class="image">
+                        <p class="display-1 text-center"><i class="fas fa-stethoscope"></i></p>
+                    </div>
+                    <div class="title">
+                        <p class="text-muted text-center w-5">Staff</p>
+                        <h1 class="display-3 text-capitalize text-center w-2">Say hello to our Doctors</h1>
+                        <div class="underlines">
+                            <div class="underline underline-side"></div>
+                            <div class="underline underline-center"></div>
+                            <div class="underline underline-side"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="doctors-carousel">
+                            <div class="doctor-list">
+                                <div class="doctor-card">
+                                    <div class="doctor-image text-center">
+                                        <img src="./images/doctors_face/d1.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="doctor-text">
+                                        <h4 class="text-center">Name Name</h4>
+                                        <p class="text-center text-muted thin">Doctor</p>
+                                    </div>
+                                </div>
+                                <div class="doctor-card">
+                                    <div class="doctor-image text-center">
+                                        <img src="./images/doctors_face/d2.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="doctor-text">
+                                        <h4 class="text-center">Name Name</h4>
+                                        <p class="text-center text-muted thin">Doctor</p>
+                                    </div>
+                                </div>
+                                <div class="doctor-card">
+                                    <div class="doctor-image text-center">
+                                        <img src="./images/doctors_face/d3.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="doctor-text">
+                                        <h4 class="text-center">Name Name</h4>
+                                        <p class="text-center text-muted thin">Doctor</p>
+                                    </div>
+                                </div>
+                                <div class="doctor-card">
+                                    <div class="doctor-image text-center">
+                                        <img src="./images/doctors_face/d4.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="doctor-text">
+                                        <h4 class="text-center">Name Name</h4>
+                                        <p class="text-center text-muted thin">Doctor</p>
+                                    </div>
+                                </div>
+                                <div class="doctor-card">
+                                    <div class="doctor-image text-center">
+                                        <img src="./images/doctors_face/d5.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="doctor-text">
+                                        <h4 class="text-center">Name Name</h4>
+                                        <p class="text-center text-muted thin">Doctor</p>
+                                    </div>
+                                </div>
+                                <div class="doctor-card">
+                                    <div class="doctor-image text-center">
+                                        <img src="./images/doctors_face/d6.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="doctor-text">
+                                        <h4 class="text-center">Name Name</h4>
+                                        <p class="text-center text-muted thin">Doctor</p>
+                                    </div>
+                                </div>
+                                <div class="doctor-card">
+                                    <div class="doctor-image text-center">
+                                        <img src="./images/doctors_face/d7.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="doctor-text">
+                                        <h4 class="text-center">Name Name</h4>
+                                        <p class="text-center text-muted thin">Doctor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news full-height" id="news">
+            <div class="container">
+                <div class="service-head">
+                    <div class="image">
+                        <p class="display-1 text-center"><i class="fas fa-stethoscope"></i></p>
+                    </div>
+                    <div class="title">
+                        <p class="text-muted text-center w-5">News</p>
+                        <h1 class="display-3 text-capitalize text-center w-75">Get all your updates right here</h1>
+                        <div class="underlines">
+                            <div class="underline underline-side"></div>
+                            <div class="underline underline-center"></div>
+                            <div class="underline underline-side"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="news-carousel">
+                            <div class="news-list">
+                                <div class="news-card">
+                                    <div class="news-image text-center">
+                                        <img src="./images/news/d1.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="news-text">
+                                        <h4 class="text-center">News Headline</h4>
+                                        <p class="text-center text-muted thin">News subtitle text content</p>
+                                    </div>
+                                </div>
+                                <div class="news-card">
+                                    <div class="news-image text-center">
+                                        <img src="./images/news/d2.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="news-text">
+                                        <h4 class="text-center">News Headline</h4>
+                                        <p class="text-center text-muted thin">News subtitle text content</p>
+                                    </div>
+                                </div>
+                                <div class="news-card">
+                                    <div class="news-image text-center">
+                                        <img src="./images/news/d3.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="news-text">
+                                        <h4 class="text-center">News Headline</h4>
+                                        <p class="text-center text-muted thin">News subtitle text content</p>
+                                    </div>
+                                </div>
+                                <div class="news-card">
+                                    <div class="news-image text-center">
+                                        <img src="./images/news/d4.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="news-text">
+                                        <h4 class="text-center">News Headline</h4>
+                                        <p class="text-center text-muted thin">News subtitle text content</p>
+                                    </div>
+                                </div>
+                                <div class="news-card">
+                                    <div class="news-image text-center">
+                                        <img src="./images/news/d5.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="news-text">
+                                        <h4 class="text-center">News Headline</h4>
+                                        <p class="text-center text-muted thin">News subtitle text content</p>
+                                    </div>
+                                </div>
+                                <div class="news-card">
+                                    <div class="news-image text-center">
+                                        <img src="./images/news/d6.jpg" alt="1" class="responsive">
+                                    </div>
+                                    <div class="news-text">
+                                        <h4 class="text-center">News Headline</h4>
+                                        <p class="text-center text-muted thin">News subtitle text content</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-overlay"></div>
+
+            <div class="container">
+                <div class="row text-white">
+                    <div class="col-12 col-md-3">
+                        <div class="media-wrap">
+                            <a href="#">
+                                <!-- <img src="assets/images/logo2.png" alt="Mobirise" media-simple="true"> -->
+                                <h1 class="display-1">Logo</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h5 class="pb-3">
+                            Address
+                        </h5>
+                        <p class="">
+                            1234 Street Name
+                            <br>City, AA 99999
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h5 class="pb-3">
+                            Contacts
+                        </h5>
+                        <p class="">
+                            Email: support@hospital.com
+                            <br>Phone: +91 12345 65789
+                            <br>Fax: +91 78945 12345
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h5 class="pb-3">
+                            Links
+                        </h5>
+                        <p class="">
+                            <a class="text-white" href="#">Link</a><br>
+                            <a class="text-white" href="#">Link</a><br>
+                            <a class="text-white" href="#">Link</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-lower">
+                    <div class="media-container-row">
+                        <div class="col-sm-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p class="">
+                                    © Copyright 2019 Hospital - All Rights Reserved
+                                </p>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="soc-list text-right">
+                                    <div class="soc-item">
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div class="soc-item">
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </div>
+                                    <div class="soc-item">
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                    <div class="soc-item">
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                    <!-- <div class="soc-item">
+                                        <a href="#" target="_blank">
+
+                                        </a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
+                Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
+            <div>
+                Image by <a
+                    href="https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3187087">rawpixel</a>
+                from <a
+                    href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3187087">Pixabay</a>
+            </div> -->
+        </footer>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./css/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.doctor-list').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4
+            });
+            $('.news-list').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            });
+        });
+    </script>
 </body>
 
 </html>
