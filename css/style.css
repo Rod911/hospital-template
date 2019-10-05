@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+nav.navbar {
+  /* position: absolute; */
+  height: 10rem;
+  color: #fff;
+  padding: 2rem 4rem;
+}
+
+.nav-item {
+  padding: 0 2rem;
+}
+
+/* SECTION */
+.full-height {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* HEAD SECTION */
+
+section.head {
+  background-image: url("../images/slide-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 16rem;
+  margin-top: -10rem;
+  color: #fff;
+}
+
+/* p.text-muted {
+  color: rgb(223, 161, 228) !important;
+} */
+
+.head-left {
+  padding: 3rem 0;
+}
+
+.card {
+  border: none;
+  padding: 3rem;
+  color: black;
+}
+
+.thin {
+  font-weight: 300 !important;
+}
+
+/* .contact-method {
+  border-bottom: 1px solid rgba(159, 91, 164, 0.521);
+} */
+
+.contact-method > div {
+  padding: 1rem 0;
+  display: inline-block;
+}
+
+.card.head-card {
+  background-color: #ffffffef;
+  box-shadow: 0 0 3rem rgba(255, 255, 255, 1);
+}
+
+.dropdown-toggle,
+.rounded {
+  background-color: transparent;
+  border: none;
+  /* display: inline-block; */
+}
+
+p.dropdown-item {
+  padding: 0 1rem !important;
+}
+
+.rounded {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  border: 1px solid rgba(189, 166, 190, 0.493);
+  border-radius: 4rem !important;
+  padding: 0.5rem 1rem;
+}
+
+.bg-grey {
+  background-color: #d6d6d646;
+}
+
+/* section.head > .container {
+    background-color: rgba(0, 0, 0, 0.308);
+} */
+
+/* ABOUT SECTION*/
+
+section.about {
+  padding-top: 12rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  width: 18rem;
+}
+
+.product-card {
+  padding: 2rem;
+  box-shadow: 0.1rem 0.3rem 0.2rem rgba(211, 155, 216, 0.24);
+  margin: 1rem;
+}
+
+.small-text {
+  color: #9f5ba4;
+  margin: 0;
+}
+
+.no-border {
+  padding: 0 0.5rem;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+.about-item {
+  padding: 0.5rem 0;
+}
+
+.about-item > div {
+  display: inline-block;
+}
+
+.about-item > .tick {
+  text-align: center;
+  background-color: rgba(211, 155, 216, 0.14);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+blockquote.blockquote > div {
+  display: block;
+}
+
+blockquote.blockquote > div {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.shadowed {
+  box-shadow: 0 0 6rem 1rem rgba(173, 127, 177, 0.137);
+  padding: 0.5rem;
+}
+
+.overhead {
+  min-height: 70vh;
+  background-color: #233645;
+  padding: 6rem 24rem;
+}
+
+.overhead-list {
+  text-align: center;
+}
+
+.overhead-item {
+  color: #fff;
+  margin: 0 2rem;
+  display: inline-block;
+}
+
+.overhead-text {
+  font-weight: 600;
+}
+
+.overlay {
+  margin-top: -14rem;
+  box-shadow: 0rem 1rem 3rem 0rem rgba(221, 162, 255, 0.288);
+  background-color: #FFF;
+}
+
+.overlay-card{
+  border-radius: 0;
+  display: inline-block;
+  width: 66%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.bg-green {
+  background-color: rgba(84, 173, 84, 0.5);
+}
+
+.side-img{
+  vertical-align: top;
+  display: inline-block;
+  width: 33%;
+  margin-left: 4px;
+}
+
+label.text-muted {
+  margin-left: 1rem;
+  font-size: .8rem;
+  font-weight: 400;
+  display: block;
+}
+
+input.text-input{
+  border: none;
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  border-radius: 4rem;
+}
+
+
+input.text-input::placeholder{
+  font-size: 1.2rem;
+}
+
+.service-head {
+  margin-top: 6rem;
+}
+
+.service-head > .image > p > i {
+  color: #75687c6c;
+  font-size: 12rem; 
+}
+
+.service-head > .title > h1 {
+  width: 32rem;
+  margin: -6rem auto auto auto;
+}
+
+.underlines {
+  text-align: center;
+}
+
+.underline{
+  display: inline-block;
+  border: .15rem solid #9f5ba4;
+  margin: 0 .2rem;
+  border-radius: .2rem;
+}
+
+.underline-side {
+  width: 1rem;
+}
+
+.underline-center {
+  width: 4.5rem;
+}
+
+.service-grid-container{
+  margin-top: 4rem;
+}
+
+.half-pad{
+  padding: 0 2rem 2rem 2rem;
+}
+
+.service-grid-item {
+  box-shadow: 0 0 3rem 0rem rgba(221, 162, 255, 0.199);
+  width: 95%;
+  margin: 1rem;
+}
+
