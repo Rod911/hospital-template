@@ -669,66 +669,66 @@
                         <div class="doctors-carousel">
                             <div class="doctor-list">
                                 <div class="doctor-card">
-                                    <div class="doctor-image text-center">
-                                        <img src="./images/doctors_face/d1.jpg" alt="1" class="responsive">
+                                    <div class="text-center">
+                                        <img src="./images/doctors_face/d1.jpg" alt="1" class="responsive doctor-image ">
                                     </div>
                                     <div class="doctor-text">
                                         <h4 class="text-center">Name Name</h4>
-                                        <p class="text-center text-muted thin">Doctor</p>
+                                        <p class="text-center small-text thin">Doctor</p>
                                     </div>
                                 </div>
                                 <div class="doctor-card">
-                                    <div class="doctor-image text-center">
-                                        <img src="./images/doctors_face/d2.jpg" alt="1" class="responsive">
+                                    <div class="text-center">
+                                        <img src="./images/doctors_face/d2.jpg" alt="1" class="responsive doctor-image ">
                                     </div>
                                     <div class="doctor-text">
                                         <h4 class="text-center">Name Name</h4>
-                                        <p class="text-center text-muted thin">Doctor</p>
+                                        <p class="text-center small-text thin">Doctor</p>
                                     </div>
                                 </div>
                                 <div class="doctor-card">
-                                    <div class="doctor-image text-center">
-                                        <img src="./images/doctors_face/d3.jpg" alt="1" class="responsive">
+                                    <div class="text-center">
+                                        <img src="./images/doctors_face/d3.jpg" alt="1" class="responsive doctor-image ">
                                     </div>
                                     <div class="doctor-text">
                                         <h4 class="text-center">Name Name</h4>
-                                        <p class="text-center text-muted thin">Doctor</p>
+                                        <p class="text-center small-text thin">Doctor</p>
                                     </div>
                                 </div>
                                 <div class="doctor-card">
-                                    <div class="doctor-image text-center">
-                                        <img src="./images/doctors_face/d4.jpg" alt="1" class="responsive">
+                                    <div class="text-center">
+                                        <img src="./images/doctors_face/d4.jpg" alt="1" class="responsive doctor-image ">
                                     </div>
                                     <div class="doctor-text">
                                         <h4 class="text-center">Name Name</h4>
-                                        <p class="text-center text-muted thin">Doctor</p>
+                                        <p class="text-center small-text thin">Doctor</p>
                                     </div>
                                 </div>
                                 <div class="doctor-card">
-                                    <div class="doctor-image text-center">
-                                        <img src="./images/doctors_face/d5.jpg" alt="1" class="responsive">
+                                    <div class="text-center">
+                                        <img src="./images/doctors_face/d5.jpg" alt="1" class="responsive doctor-image ">
                                     </div>
                                     <div class="doctor-text">
                                         <h4 class="text-center">Name Name</h4>
-                                        <p class="text-center text-muted thin">Doctor</p>
+                                        <p class="text-center small-text thin">Doctor</p>
                                     </div>
                                 </div>
                                 <div class="doctor-card">
-                                    <div class="doctor-image text-center">
-                                        <img src="./images/doctors_face/d6.jpg" alt="1" class="responsive">
+                                    <div class="text-center">
+                                        <img src="./images/doctors_face/d6.jpg" alt="1" class="responsive doctor-image ">
                                     </div>
                                     <div class="doctor-text">
                                         <h4 class="text-center">Name Name</h4>
-                                        <p class="text-center text-muted thin">Doctor</p>
+                                        <p class="text-center small-text thin">Doctor</p>
                                     </div>
                                 </div>
                                 <div class="doctor-card">
-                                    <div class="doctor-image text-center">
-                                        <img src="./images/doctors_face/d7.jpg" alt="1" class="responsive">
+                                    <div class="text-center">
+                                        <img src="./images/doctors_face/d7.jpg" alt="1" class="responsive doctor-image ">
                                     </div>
                                     <div class="doctor-text">
                                         <h4 class="text-center">Name Name</h4>
-                                        <p class="text-center text-muted thin">Doctor</p>
+                                        <p class="text-center small-text thin">Doctor</p>
                                     </div>
                                 </div>
                             </div>
@@ -947,13 +947,15 @@
                 speed: 300,
                 centerMode: true,
                 variableWidth: true,
+                lazyLoad: 'ondemand',
                 slidesToShow: slide1Count
             });
             $('.news-list').slick({
                 dots: true,
                 infinite: true,
                 centerMode: true,
-                slidesToShow: slide2Count 
+                lazyLoad: 'ondemand',
+                slidesToShow: slide2Count
             });
             $('.scroll').click(function (e) {
                 // e.preventDefault();
@@ -966,7 +968,7 @@
 
         scrollContainer.onscroll = function () {
             // console.log(scrollContainer.scrollTop);
-            if (scrollContainer.scrollTop > 1000) {
+            if (scrollContainer.scrollTop > 700) {
                 moveTop.classList.add("show");
             } else {
                 moveTop.classList.remove("show");

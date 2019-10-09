@@ -64,6 +64,7 @@ section {
 }
 
 nav.navbar {
+  box-shadow: inset 0px 2rem 2rem -2rem rgba(20, 20, 20, 0.5);
   position: absolute;
   height: 10rem;
   color: #fff;
@@ -79,7 +80,7 @@ nav.navbar {
 }
 
 .nav-item {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .nav-link {
@@ -109,7 +110,7 @@ section.head {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 18rem 2rem 2rem;
+  padding: 15rem 2rem 2rem;
   color: #fff;
 }
 
@@ -174,7 +175,7 @@ section.head {
 }
 
 .card.head-card {
-  background-color: #ffffffef;
+  background-color: #ffffffcc;
   box-shadow: 0 0 3rem rgba(255, 255, 255, 1);
   border-radius: 1rem;
 }
@@ -200,7 +201,7 @@ p.dropdown-item {
 }
 
 .bg-grey {
-  background-color: #d6d6d646;
+  background-color: #d6d6d6d6;
 }
 
 /* section.head > .container {
@@ -266,7 +267,7 @@ section.about {
 }
 
 .about-item > .tick {
-  margin-top: .3rem;
+  margin-top: 0.3rem;
   text-align: center;
   background-color: rgba(211, 155, 216, 0.14);
   width: 2rem;
@@ -298,11 +299,6 @@ section.mission {
   right: -1rem;
   border-radius: 50%;
   box-shadow: 0.3rem 0.3rem 1rem #8d51929c;
-}
-
-.responsive {
-  width: 100%;
-  height: auto;
 }
 
 .shadowed {
@@ -512,7 +508,7 @@ section.services {
 
 .testimonial-divider {
   margin: 0 -2px;
-  border: 1px solid #63636380;
+  border: 1px solid #6c757d4d;
   height: inherit;
   border-radius: 2px;
 }
@@ -537,13 +533,14 @@ section.contact {
   margin: 0;
 }
 
-.doctors-carousel {
-  padding: 4rem 0;
+.slick-track {
+  padding: 1rem 0 0.5rem 0;
 }
 
-/* .doctors-carousel .doctor-card {
-  height: 24rem;
-} */
+.doctors-carousel .doctor-card {
+  margin: 0 1rem;
+  box-shadow: 0 0 1rem #9a9a9a57;
+}
 
 .doctor-card > .doctor-text {
   /* background-color: #9f5ba46e; */
@@ -552,12 +549,18 @@ section.contact {
   width: 85%;
 }
 
+img.doctor-image {
+  width: auto;
+  height: 14rem;
+}
+
 .responsive {
   width: 100%;
   height: auto;
 }
 
-.news-carousel {
+.news-carousel,
+.doctors-carousel {
   padding: 4rem 0;
 }
 
@@ -578,6 +581,10 @@ section.news {
   margin: 1rem;
   box-shadow: 0 0 1rem #9a9a9a57;
 }
+
+/* .news-card > .news-image{
+  height: 14rem;
+} */
 
 .news-card > .news-text {
   margin: 0 0 0 0.5rem;
@@ -606,9 +613,8 @@ a i {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background-image: url("../images/footer-bg.jpg");
+  padding: 1rem 0;
 }
 
 .footer-overlay {
@@ -669,7 +675,7 @@ a i {
 
 /* Media Queries */
 
-@media (max-width: 800px) {
+@media (max-width: 991px) {
   nav.navbar {
     padding: 1rem;
     display: block;
@@ -699,8 +705,18 @@ a i {
 
   .nav-section.show {
     display: block;
+    opacity: 1;
+    animation: fadeIn 1s linear;
   }
 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .nav-section > .navs > .nav,
   .nav-section > .contact-links > .nav {
     display: block;
@@ -855,10 +871,13 @@ a i {
 
   .testimonial-divider {
     margin: 1.5rem;
-    border: 1px solid #80808080;
     height: 2px;
-    border-radius: 2px;
     width: 100%;
+  }
+
+  .news-carousel,
+  .doctors-carousel {
+    padding: 1rem 0;
   }
 }
 
