@@ -29,48 +29,63 @@
 </head>
 
 <body>
-    <div class="scroll-container">
-        <nav class="navbar">
-            <div class="nav-section brand">
-                <h1 class="display-4">Lorem</h1>
-            </div>
-            <div class="nav-section navs">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#appointments">Appointments</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#staff">Staff</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#news">News</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-section contact-links">
-                <ul class="nav">
-                    <li class="nav-item clickable"><img src="./svg/phone white.svg" alt=""> +91 12345 65789</li>
-                    <li class="nav-item clickable"><img src="./svg/placeholder white.svg" alt=""> Address</li>
-                </ul>
-            </div>
-        </nav>
+    <div class="scroll-container" id="#scrollContainer">
+        <div class="nav-container img-bg">
+            <nav class="navbar container-fluid" id="navContainer">
+                <div class="brand row justify-content-between">
+                    <h1 class="display-4 brand-logo col-4">Lorem</h1>
+                    <div class="col-2">
+                        <button class="collapsible btn" role="button" id="nav-toggle">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </button>
+                    </div>
+                </div>
+                <div class="nav-section" id="nav-collapse">
+                    <div class="navs">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#appointments">Appointments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#staff">Staff</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#news">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-links">
+                        <ul class="nav">
+                            <li class="nav-item clickable"><a class="nav-link" href="tel:+91 12345 65789"><img
+                                        src="./svg/phone white.svg" alt="">+91 12345 65789</a> </li>
+                            <li class="nav-item clickable"><a href="https://g.page/STEED-26?share" target="_blank"
+                                    class="nav-link"><img src="./svg/placeholder white.svg" alt=""> Address</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
         <section class="head full-height" id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <div class="head-left">
+                        <div class="head-left img-bg">
 
                             <div class="sub-text">
                                 <p class="text-muted-light">Here for care</p>
@@ -79,7 +94,9 @@
                                 <h1 class="display-3">Providing Best Healthcare</h1>
                             </div>
                             <div class="about-links">
-                                <a href="#about" class="text-uppercase text-decoration-none rounded bg-grey">about us</a>
+                                <a href="#about"
+                                    class="text-uppercase text-decoration-none rounded bg-grey scroll">about
+                                    us</a>
                             </div>
                         </div>
                     </div>
@@ -93,8 +110,8 @@
                             </div>
                             <div class="contact-methods">
                                 <div class="contact-method">
-                                    <div class="contact-icon"><img src="./svg/location-pin.svg" alt=""
-                                            class="icon-md" /></div>
+                                    <div class="contact-icon"><img src="./svg/address.svg" alt="" class="icon-md" />
+                                    </div>
                                     <div class="contact-link">
                                         <button type="button" class="dropdown-toggle" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
@@ -112,7 +129,7 @@
                                 </div>
                                 <hr>
                                 <div class="contact-method">
-                                    <div class="contact-icon"><img src="./svg/family.svg" alt="" class="icon-md"></div>
+                                    <div class="contact-icon"><img src="./svg/support.svg" alt="" class="icon-md"></div>
                                     <div class="contact-link">
                                         <button type="button" class="dropdown-toggle" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
@@ -140,6 +157,44 @@
         <section class="about full-height" id="about">
             <div class="container">
                 <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="product-card card no-border">
+                            <div class="card-body">
+                                <p class="small-text">About Us</p>
+                                <h1 class="card-title display-4">A short story about our hospital</h1>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nobis
+                                    reiciendis, laboriosam aliquam culpa libero autem debitis aut, similique inventore
+                                    earum iste ab beatae obcaecati harum veritatis eum natus sunt.
+                                </p>
+
+                                <ul class="about-list">
+                                    <li class="about-item">
+                                        <div class="tick"><img src="./svg/tick.svg" alt="" class="icon-xs"></div>
+                                        <div class="about-text">
+                                            Lorem ipsum dolor sit amet consectetur
+                                        </div>
+                                    </li>
+                                    <li class="about-item">
+                                        <div class="tick"><img src="./svg/tick.svg" alt="" class="icon-xs"></div>
+                                        <div class="about-text">
+                                            Placeat nobis laudantium repellat eius ex optio illum
+                                        </div>
+                                    </li>
+                                    <li class="about-item">
+                                        <div class="tick"><img src="./svg/tick.svg" alt="" class="icon-xs"></div>
+                                        <div class="about-text">
+                                            optio illum ratione minima consequatur fugiat
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="more-about">
+                                    <a href="#" class="clickable text-decoration-none rounded">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-6 col-md-12">
                         <div class="grid-container">
                             <div class="grid-item">
@@ -197,44 +252,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="product-card card no-border">
-                            <div class="card-body">
-                                <p class="small-text">About Us</p>
-                                <h1 class="card-title display-4">A short story about our hospital</h1>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nobis
-                                    reiciendis, laboriosam aliquam culpa libero autem debitis aut, similique inventore
-                                    earum iste ab beatae obcaecati harum veritatis eum natus sunt.
-                                </p>
-
-                                <ul class="about-list">
-                                    <li class="about-item">
-                                        <div class="tick"><img src="./svg/tick.svg" alt="" class="icon-xs"></div>
-                                        <div class="about-text">
-                                            Lorem ipsum dolor sit amet consectetur
-                                        </div>
-                                    </li>
-                                    <li class="about-item">
-                                        <div class="tick"><img src="./svg/tick.svg" alt="" class="icon-xs"></div>
-                                        <div class="about-text">
-                                            Placeat nobis laudantium repellat eius ex optio illum
-                                        </div>
-                                    </li>
-                                    <li class="about-item">
-                                        <div class="tick"><img src="./svg/tick.svg" alt="" class="icon-xs"></div>
-                                        <div class="about-text">
-                                            optio illum ratione minima consequatur fugiat
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <div class="more-about">
-                                    <a href="#" class="clickable text-decoration-none rounded">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -251,31 +268,29 @@
                                     atque, numquam beatae, enim sapiente iusto ratione
                                 </p>
                                 <hr>
-                                <div class="blockquote">
-                                    <div class="quote-icon ml-n3 mr-1 mb-1 mt-3 float-left">
-                                        <img src="./svg/bandage.svg" alt="" class="icon-lg">
+
+                                <div class="blockquote-item">
+
+                                    <div class="quote-icon pt-2 float-left">
+                                        <img src="./svg/bandage.svg" alt="" class="icon-lg pl-0 pr-3">
                                     </div>
-                                    <div class="quote-text">
-                                        <p class="mb-1 mt-1">
+                                    <div class="quote-text pt-0">
+                                        <p class="mb-0">
                                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nesciunt
-                                            quae
-                                            quas
-                                            perspiciatis laudantium
+                                            quae quas perspiciatis laudantium
                                         </p>
                                     </div>
                                 </div>
-
                                 <hr>
-                                <div class="blockquote">
-                                    <div class="quote-icon ml-n3 mr-1 mb-1 mt-3 float-left">
-                                        <img src="./svg/blood.svg" alt="" class="icon-lg">
+                                <div class="blockquote-item">
+
+                                    <div class="quote-icon pt-2 float-left">
+                                        <img src="./svg/blood.svg" alt="" class="icon-lg pl-0 pr-3">
                                     </div>
-                                    <div class="quote-text">
-                                        <p class="mb-1 mt-1">
+                                    <div class="quote-text pt-0">
+                                        <p class="mb-0">
                                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nesciunt
-                                            quae
-                                            quas
-                                            perspiciatis laudantium
+                                            quae quas perspiciatis laudantium
                                         </p>
                                     </div>
                                 </div>
@@ -296,6 +311,8 @@
         </section>
         <section class="appointment full-height" id="appointments">
             <div class="overhead">
+            </div>
+            <div class="container overhead-container">
                 <div class="overhead-list">
                     <div class="overhead-item">
                         <div class="overhead-image"><img src="./svg/doctor bag.svg" alt="image" class="icon-xl"
@@ -325,8 +342,6 @@
                         <div class="overhead-text small-text">Awards</div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
                 <div class="overlay">
                     <div class="row">
                         <div class="col-12">
@@ -368,7 +383,7 @@
                                             <div class="col">
                                                 <div class="rounded-button">
                                                     <button class="rounded bg-purple">
-                                                        Make appointment
+                                                        Make Appointment
                                                     </button>
                                                 </div>
 
@@ -377,7 +392,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="side-img">
+                            <div class="side-img ">
                                 <img src="./images/dr-mike-1.jpg" alt="" class="side-img-bg">
                                 <div class="side-img-over">
                                     <img src="./svg/rod-of-asclepius white.svg" alt="" class="img-over icon-lg">
@@ -397,7 +412,7 @@
                     </div>
                     <div class="title">
                         <p class="text-muted text-center w-5">Services</p>
-                        <h1 class="display-3 text-capitalize text-center w-5">What we do for you?</h1>
+                        <h1 class="display-3 text-capitalize text-center w-75">What we do for you?</h1>
                         <div class="underlines">
                             <div class="underline underline-side"></div>
                             <div class="underline underline-center"></div>
@@ -420,7 +435,7 @@
                                         enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum
                                         velit.</div>
 
-                                    <div class="mt-4">
+                                    <div class="mt-4 mb-4">
                                         <a href="#" class="text-muted text-capitalize text-decoration-none"><i
                                                 class="fas fa-arrow-right mr-2 "></i> read more</a>
                                     </div>
@@ -438,7 +453,7 @@
                                         enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum
                                         velit.</div>
 
-                                    <div class="mt-4">
+                                    <div class="mt-4 mb-4">
                                         <a href="#" class="text-muted text-capitalize text-decoration-none"><i
                                                 class="fas fa-arrow-right mr-2 "></i> read more</a>
                                     </div>
@@ -456,7 +471,7 @@
                                         enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum
                                         velit.</div>
 
-                                    <div class="mt-4">
+                                    <div class="mt-4 mb-4">
                                         <a href="#" class="text-muted text-capitalize text-decoration-none"><i
                                                 class="fas fa-arrow-right mr-2 "></i> read more</a>
                                     </div>
@@ -474,7 +489,7 @@
                                         enim dolorem ea eaque rem doloremque facilis? Eveniet soluta nihil dolores ipsum
                                         velit.</div>
 
-                                    <div class="mt-4">
+                                    <div class="mt-4 mb-4">
                                         <a href="#" class="text-muted text-capitalize text-decoration-none"><i
                                                 class="fas fa-arrow-right mr-2 "></i> read more</a>
                                     </div>
@@ -505,12 +520,12 @@
                     <div class="row">
                         <div class="col-lg-6 col-sm-12 user-review-left">
                             <div class="row justify-content-between">
-                                <div class="col-2">
+                                <div class="col-4">
                                     <div class="quote">
-                                        <img src="./svg/quote-left.svg" alt="" class="icon-md img-over">
+                                        <img src="./svg/quote-left.svg" alt="" class="icon-sm img-over">
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-5 col-lg-4">
                                     <div class="rating">
                                         <img src="./svg/star.svg" alt="" class="icon-xs">
                                         <img src="./svg/star.svg" alt="" class="icon-xs">
@@ -540,7 +555,7 @@
                                         <div class="user-picture float-left w-25">
                                             <img src="./images/avatar-2155431_960_7201.png" alt="" class="">
                                         </div>
-                                        <div class="user-info w-50">
+                                        <div class="user-info w-75">
 
                                             <h5 class="h5 mt-3">
                                                 <strong>
@@ -554,15 +569,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="vertical-divider"></div>
+                        <div class="testimonial-divider"></div>
                         <div class="col-lg-6 col-sm-12 user-review-right">
                             <div class="row justify-content-between">
-                                <div class="col-2">
+                                <div class="col">
                                     <div class="quote">
-                                        <img src="./svg/quote-left.svg" alt="" class="icon-md img-over">
+                                        <img src="./svg/quote-left.svg" alt="" class="icon-sm img-over">
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col">
                                     <div class="rating">
                                         <img src="./svg/star.svg" alt="" class="icon-xs">
                                         <img src="./svg/star.svg" alt="" class="icon-xs">
@@ -592,7 +607,7 @@
                                         <div class="user-picture float-left w-25">
                                             <img src="./images/avatar-2155431_960_7201.png" alt="" class="">
                                         </div>
-                                        <div class="user-info w-50">
+                                        <div class="user-info w-75">
 
                                             <h5 class="h5 mt-3">
                                                 <strong>
@@ -614,8 +629,8 @@
             <div class="container">
                 <div class="service-head">
                     <div class="row">
-                        <div class="col-lg-6 d-none d-lg-block"></div>
-                        <div class="col-lg-6 col-md-12 d-block">
+                        <div class="col-lg-6 col-md-4 d-none d-md-block d-lg-block"></div>
+                        <div class="col-lg-6 col-md-8 d-block">
                             <div class="card">
                                 <div class="small-text">Subscribe to get updates</div>
                                 <h1 class="card-title display-4 text-capitalize">Find a hospital near you.</h1>
@@ -803,7 +818,7 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
+        <section class="footer img-bg">
             <div class="footer-overlay"></div>
 
             <div class="container">
@@ -893,6 +908,11 @@
                     </div>
                 </div>
             </div>
+            <a href="#home" id="move-top" class="scroll">
+                <div>
+                    <i class="fas fa-angle-up"></i>
+                </div>
+            </a>
             <!-- <div>
                 Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
                     href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
@@ -903,28 +923,55 @@
                 from <a
                     href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3187087">Pixabay</a>
             </div> -->
-        </footer>
+        </section>
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./css/slick/slick.min.js"></script>
 
     <script>
+        var scrollContainer = document.getElementById("#scrollContainer");
+        var head = document.getElementById("home")
+        var moveTop = document.getElementById("move-top");
+
+        var width = screen.width;
+        var slide1Width = 300;
+        var slide2Width = 600;
+
+        var slide1Count = Math.round(width / slide1Width);
+        var slide2Count = Math.round(width / slide2Width);
+
         $(document).ready(function () {
             $('.doctor-list').slick({
                 dots: true,
                 infinite: true,
                 speed: 300,
-                slidesToShow: 4,
-                slidesToScroll: 4
+                centerMode: true,
+                variableWidth: true,
+                slidesToShow: slide1Count
             });
             $('.news-list').slick({
                 dots: true,
                 infinite: true,
-                speed: 300,
-                slidesToShow: 2,
-                slidesToScroll: 1
+                centerMode: true,
+                slidesToShow: slide2Count 
             });
+            $('.scroll').click(function (e) {
+                // e.preventDefault();
+            });
+            $('#nav-toggle').click(function () {
+                $('#nav-collapse').toggleClass('show');
+                $('#navContainer').toggleClass('active');
+            })
         });
+
+        scrollContainer.onscroll = function () {
+            // console.log(scrollContainer.scrollTop);
+            if (scrollContainer.scrollTop > 1000) {
+                moveTop.classList.add("show");
+            } else {
+                moveTop.classList.remove("show");
+            }
+        };
     </script>
 </body>
 
